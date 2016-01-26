@@ -9,7 +9,7 @@ Although no software is strictly required, in order to compile files from within
 
 Although the command line can be intimidating (and ugly), it allows us to set up a **completely free**, bare-bones local environment with a lot of power and configuration. [The process for all of this is surprisingly simple](docs/node-gulp/).
 
-* [Node (v4)](nodejs.org/) and [Gulp JS](gulpjs.com/)
+* [Node (v4)](http://www.nodejs.org/) and [Gulp JS](http://www.gulpjs.com/)
 
 _[Read more about setting up Node and Gulp](docs/node-gulp/)_
 
@@ -32,7 +32,7 @@ Finally, it's a matter of organization, maintainability, and keeping your code [
 
 ## Project Structure ##
 
-Within each folder that needs explanation is a more detailed README.
+Within each folder that needs explanation is a more detailed README. Otherwise, see the [docs](docs/) folder.
 
 * `/` (root): The base folder of the project contains example html, configuration files, and this README.
 
@@ -46,7 +46,7 @@ Within each folder that needs explanation is a more detailed README.
   [Read more about the kit files in this project](_partials/kits/)
 
   * `/_partials/scss`: [Sass](http://sass-lang.com/) files that compile to css and saved in `/style` folder. Gulp, Codekit, and Prepros can handle these files.
-  [Read more about the Sass in this project](_partials/)
+  [Read more about the Sass in this project](docs/sass/)
 
 * `/files`: XML and JSON files for the dropdown menu, banner widget and news ticker.
 
@@ -259,7 +259,7 @@ They should be included using the standard `<script>` tag at the end of the `</b
 
 ```html
 <script src="javascript/jquery-2.2.0.min.js"></script>
-<script src="javascript/hoverIntent.js"></script>
+<script src="javascript/hoverIntent.min.js"></script>
 ```
 
 **Code**
@@ -309,6 +309,8 @@ Each menu in the .xml file will line up with its associated main navigation (red
 </menu>
 ```
 
+---
+
 ## Simple CSS Changes
 
 Within the `/styles/main.css` file, you can change a couple things to make your site look a little more modern ([If you are using Sass, you can configure much more](_partials/scss/)).
@@ -324,6 +326,8 @@ Within the `/styles/main.css` file, you can change a couple things to make your 
 * **Background Color**: Under the `body` tag, there is a `background` set with a color and image. All background patterns are transparent `png`s that will lay on top of whatever color you set. The default is `#c7ab4c`, which is consistent with the [SMPH site](http://med.wisc.edu).
 
   * **Background pattern**: Within the `/images/backgrounds` folder are three patterns that are recommended for the background of your department sites. The image can be changed in the same place as the background color.
+
+---
 
 ## Logo
 
@@ -347,6 +351,7 @@ Using markup isn't without its share of issues though. Here are some possible pr
 
   * **Resolution**: Under`.logo-type`, change the `font-size` to `.85em` and change `top` of `.logo` to `.13em`.
 
+---
 
 ## Navigation
 
@@ -360,20 +365,19 @@ If you can't eliminate sub navigation entirely (likely the case), at least minim
 
 _Note that dropdown menus will only work on desktop-sized views, so your top links should go to some kind of landing page with content and links to their child pages._
 
+---
+
 ## Page headers, banners, and hierarchy
 
-The title of your section will sit just below the navigation bar. It can come in 3 forms, a simple text header (`.pageHeader`), a banner (`.banner`), and a short banner (`.banner-short`).
+The title of your section will sit just below the navigation bar. It can come in 3 forms, a simple text header (`.pageHeader`), a short banner (`.banner-short`), and a large banner (`.banner`).
 
 * **Text Header**: Used for pages beneath larger sections, and for pages with only a little bit of content.
-
-  * Example: `contact.html`
-
-* **Banner**: Used for "destination" pages. Typically save these for sections that are linked from the main navigation bar. These are high-impact, but also take a lot of vertical space. Use sparingly.
-
-  * Example: `destination.html`
-  * _A dark and light version is available. Be consistent with your use._
+  * Example: [contact.html](http://uwhealth.github.io/smph-department-sites/contact.html)
 
 * **Short Banner**: Used on pages with higher importance and a fairly large amount of content. Typically, these pages do not have sub-navigation.
+  * Example: [faculty.html](http://uwhealth.github.io/smph-department-sites/faculty.html)
+  * _A dark and light version is available. Be consistent with your use._
 
-  * Example: `faculty.html`
+* **Banner**: Used for "destination" pages. Typically save these for sections that are linked from the main navigation bar. These are high-impact, but also take a lot of vertical space, so use them sparingly.
+  * Example: [destination.html](http://uwhealth.github.io/smph-department-sites/destination.html)
   * _A dark and light version is available. Be consistent with your use._
