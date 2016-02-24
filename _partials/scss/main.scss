@@ -16,6 +16,9 @@
 @import 'base/import';
 @import 'components/import';
 
+//Page-specific styles
+@import 'theme/_home.scss';
+
 //Singleton utility classes
 @import 'utilities/text';
 @import 'utilities/overrides';

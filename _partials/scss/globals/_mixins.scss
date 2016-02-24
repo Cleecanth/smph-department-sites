@@ -41,7 +41,6 @@
 //Space and sizing mixin
 //Creates rem values based on the base-line-height and the grid-gutters
 // $multipliers can be a space-separated list
-// adding
 @mixin type-space($properties, $multipliers, $important: false) {
 
 	$multiplier: nth($multipliers, 1);

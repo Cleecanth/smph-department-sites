@@ -134,3 +134,6 @@ The `grid-init` mixin returns three other mixins: `grid-setup`, `width-setup`, `
 * `push-setup` creates human-readable grid class names for pushes.
 
 * `pull-setup` creates human-readable grid class names for pulls.
+
+
+**See the Grid Interaction portion of the [Managing media queries documentation](media-queries.md) for more details.**

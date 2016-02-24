@@ -56,7 +56,7 @@
 //Useful if you just need the rem value
 @function px-to-rems($pixels, $base-size:$base-font-size) {
 
-	@if (unitless($pixels)){
+	@if (unitless($pixels)) {
 		$pixels: $pixels * 1px;
 	}
 

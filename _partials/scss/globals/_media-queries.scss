@@ -1,37 +1,37 @@
 //========================================================
 // Media-Query-management mixin
 //========================================================
-//Enclose a block of code with a media query as named in `$breakpoints`.
+// Enclose a block of code with a media query as named in `$breakpoints`.
 // To create more consolodated code, most (if not all) media queries
 // should be called through this mixin.
 
-//Multiple media-queries can be defined, separated by a comma (small, big).
+// Multiple media-queries can be defined, separated by a comma (small, big).
 // This will place your content into multiple separate media-queries at once.
 // This is useful if you need the same css at different breakpoints.
-
-//EXAMPLE
-
-//Sass(scss):
+//
+// EXAMPLE
+//
+// Sass(scss):
 // @media-query(small, desk) {
-//	.selector{color: #fff}
+// 	.selector{color: #fff}
 // }
-
-//Compiled(css):
+//
+// Compiled(css):
 // @media only screen and (max-width: 640px){
-//	.selector{color: #fff}
+// 	.selector{color: #fff}
 // }
 // @media only screen and (min-width: 941px) {
-//	.selector{color: #fff}
+// 	.selector{color: #fff}
 // }
-
-
-//Alternative Uses:
-//* Passing multiple media queries separated by an "and" (quoted) to combine them,
+//
+//
+// Alternative Uses:
+// * Passing multiple media queries separated by an "and" (quoted) to combine them,
 //  compiles to @media screen and (min-width: 500px) and (max-width: 900px){}.
-
-//* The same can be achieved by passing "nested" as the final argument.
-
-//* Passing a value like (min-width 120em) or (max-height 30px) allows for arbitrary breakpoints.
+//
+// * The same can be achieved by passing "nested" as the final argument.
+//
+// * Passing a value like (min-width 120em) or (max-height 30px) allows for arbitrary breakpoints.
 
 @mixin media-query($mq...) {
 
