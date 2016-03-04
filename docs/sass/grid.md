@@ -2,7 +2,7 @@
 
 ## Widths
 
-The grid system built into this project is built with an 11-column base. All widths are calculated by dividing their own number by 11 (2/11 = 18.1818%).
+The grid system built into this project is built with an **11-column base**. All widths are calculated by dividing their own number by 11 (2/11 = 18.1818%).
 
 
 ## Rows and Columns
@@ -136,4 +136,4 @@ The `grid-init` mixin returns three other mixins: `grid-setup`, `width-setup`, `
 * `pull-setup` creates human-readable grid class names for pulls.
 
 
-**See the Grid Interaction portion of the [Managing media queries documentation](media-queries.md) for more details.**
+**See the Grid Interaction portion of the [Managing media queries documentation](media-queries.md#grid-interaction) for more details.**
